@@ -1,0 +1,141 @@
+/* fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Volkhov:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* utilities */
+
+:root {
+  --text-color: #5e6282;
+  --dark-color: #181e4b;
+  --button-color: #f1a501;
+  --white-color: #fff;
+  --primary-color: #df6951;
+  --linear-gradient: linear-gradient(30deg, #ff946d, #ff7d68);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Volkhov", serif;
+}
+/* 
+a {
+  text-decoration: none;
+  font-size: 17px;
+} */
+
+.container {
+  max-width: 1190px;
+  margin: 0 auto;
+}
+
+/* header css */
+
+header {
+  background-image: url("../images/hero.svg");
+  background-position: top right;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+nav {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  list-style-type: none;
+}
+
+#click {
+  display: none;
+}
+
+.menu__button {
+  display: none;
+}
+
+.nav__items {
+  align-items: center;
+  list-style-type: none;
+  display: flex;
+}
+
+.nav__items li {
+  margin-right: 55px;
+}
+
+.nav__items li a {
+  color: var(--text-color);
+}
+
+#hero {
+  display: flex;
+  align-items: center;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.hero__content h5 {
+  color: var(--primary-color);
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero__content h1 {
+  font-size: 84px;
+  font-weight: 600;
+  color: var(--dark-color);
+}
+
+.hero__content p {
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+.hero__content a {
+  margin-top: 34px;
+  display: inline-block;
+}
+
+.hero__image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.hero__button {
+  width: 170px;
+  background-image: var(--linear-gradient);
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  text-align: center;
+  color: var(--white-color);
+}
