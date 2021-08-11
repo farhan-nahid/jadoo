@@ -195,7 +195,8 @@ nav {
 }
 
 .category__container,
-.destination__container {
+.destination__container,
+#sponsor {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -259,4 +260,24 @@ nav {
   line-height: 27px;
 }
 
+.destination__title i {
+  margin-right: 10px;
+  color: var(--card-title);
+}
+
 /* destination end */
+
+#sponsor img {
+  height: 150px;
+  width: 150px;
+  object-fit: contain;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.02);
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+#sponsor img:hover {
+  box-shadow: 0 100px 80px rgba(0, 0, 0, 0.1);
+}
