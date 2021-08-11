@@ -2,7 +2,9 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Volkhov:wght@400;700&display=swap");
 
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -15,6 +17,7 @@
   --dark-color: #181e4b;
   --button-color: #f1a501;
   --white-color: #fff;
+  --card-title: #1e1d4c;
   --primary-color: #df6951;
   --linear-gradient: linear-gradient(30deg, #ff946d, #ff7d68);
 }
@@ -46,13 +49,49 @@ a {
   margin: 0 auto;
 }
 
+.small__heading {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: var(--dark-color);
+}
+
+.section__heading {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 64px;
+  text-align: center;
+  color: var(--dark-color);
+}
+
+.card__image {
+  display: flex;
+  justify-content: center;
+}
+
+.card__title {
+  margin-top: 34px;
+  margin-bottom: 15px;
+  color: var(--card-title);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+  text-align: center;
+}
+
+.card__description {
+  font-size: 16px;
+  color: var(--text-color);
+  text-align: center;
+}
+
 /* header css */
 
 header {
   background-image: url("../images/hero.svg");
   background-position: top right;
   background-repeat: no-repeat;
-  height: 100vh;
 }
 
 nav {
@@ -81,6 +120,7 @@ nav {
 }
 
 .nav__items li {
+  cursor: pointer;
   margin-right: 55px;
 }
 
@@ -139,3 +179,35 @@ nav {
   text-align: center;
   color: var(--white-color);
 }
+
+/* category start */
+#category {
+  margin: 60px 0;
+  background-image: url("../images/service-bg.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.category__container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 68px;
+}
+
+.single__category {
+  margin: 30px 10px;
+  width: 250px;
+  padding: 20px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.02);
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  border-radius: 36px;
+}
+
+.single__category:hover {
+  box-shadow: 0 100px 80px rgba(0, 0, 0, 0.1);
+}
+
+/* category end */
