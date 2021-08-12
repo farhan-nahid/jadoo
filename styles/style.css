@@ -22,10 +22,6 @@
   --linear-gradient: linear-gradient(30deg, #ff946d, #ff7d68);
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -223,7 +219,7 @@ nav {
 /* destination start */
 
 #destination {
-  margin: 60px 0;
+  margin: 68px 0;
 }
 
 .single__destination {
@@ -267,6 +263,8 @@ nav {
 
 /* destination end */
 
+/* sponsor start */
+
 #sponsor img {
   height: 150px;
   width: 150px;
@@ -281,3 +279,5 @@ nav {
 #sponsor img:hover {
   box-shadow: 0 100px 80px rgba(0, 0, 0, 0.1);
 }
+
+/* sponsor end */
